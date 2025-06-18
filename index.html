@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <h1>Loja de Computadores</h1>
@@ -22,36 +22,35 @@
         </div>
     </header>
 
+    <!-- Seção Principal com Produtos -->
     <main>
         <section class="products">
             <div class="container">
                 <h2>Computadores em Destaque</h2>
                 <div class="product-list">
                     <!-- Produto 1 -->
-                    <div class="product-card">
-                        <img src="images/computador1.jpg" alt="Computador 1">
+                    <div class="product-card" onclick="window.location.href='produto1.html'">
+                        <img src="images/computador1.jpg" alt="Computador Gamer X">
                         <h3>Computador Gamer X</h3>
                         <p>R$ 4.499,00</p>
-                        <button onclick="addToCart('Computador Gamer X', 4499)">Adicionar ao Carrinho</button>
                     </div>
                     <!-- Produto 2 -->
-                    <div class="product-card">
-                        <img src="images/computador2.jpg" alt="Computador 2">
+                    <div class="product-card" onclick="window.location.href='produto2.html'">
+                        <img src="images/computador2.jpg" alt="Computador Office Z">
                         <h3>Computador Office Z</h3>
                         <p>R$ 2.299,00</p>
-                        <button onclick="addToCart('Computador Office Z', 2299)">Adicionar ao Carrinho</button>
                     </div>
                     <!-- Produto 3 -->
-                    <div class="product-card">
-                        <img src="images/computador3.jpg" alt="Computador 3">
+                    <div class="product-card" onclick="window.location.href='produto3.html'">
+                        <img src="images/computador3.jpg" alt="PC Ultra R">
                         <h3>PC Ultra R</h3>
                         <p>R$ 5.199,00</p>
-                        <button onclick="addToCart('PC Ultra R', 5199)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- Formulário de Contato -->
         <section class="contact">
             <div class="container">
                 <h2>Entre em Contato</h2>

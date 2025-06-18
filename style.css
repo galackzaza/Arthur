@@ -1,3 +1,4 @@
+/* Reset de Estilos */
 * {
     margin: 0;
     padding: 0;
@@ -5,57 +6,65 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 2em;
     text-align: center;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #ff4c4c;
+}
+
+/* Seção de Produtos */
 .products {
     background-color: white;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .products h2 {
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .product-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -66,7 +75,14 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -76,8 +92,8 @@ nav ul li a {
 }
 
 .product-card h3 {
-    margin: 10px 0;
-    font-size: 1.5em;
+    margin: 15px 0;
+    font-size: 1.8em;
 }
 
 .product-card p {
@@ -85,55 +101,33 @@ nav ul li a {
     color: #333;
 }
 
-.product-card button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.product-card:hover {
+    background-color: #f9f9f9;
 }
 
-.product-card button:hover {
-    background-color: #555;
+/* Detalhes do Produto */
+.product-details {
+    background-color: #fff;
+    padding: 40px 0;
 }
 
-.contact {
-    background-color: #f8f8f8;
-    padding: 20px 0;
+.product-details .product-image {
+    width: 40%;
+    float: left;
+    padding: 20px;
 }
 
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.product-details .product-info {
+    width: 55%;
+    float: right;
+    padding: 20px;
 }
 
-.contact input, .contact textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.product-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.contact button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contact button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
-}
+.product-details ul {
+    list-style-type: none;
+    margin-bottom:
