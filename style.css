@@ -74,6 +74,13 @@ main {
     text-decoration: underline;
 }
 
+.pc-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
 .buy-btn {
     display: inline-block;
     background-color: #28a745;
